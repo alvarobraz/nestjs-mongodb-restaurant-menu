@@ -22,14 +22,12 @@ export class UserController {
   @Get()
   async searchByEmail(@Body() userData: IUserDTO) {
     const user = await this.user.searchByEmail(userData);
-
     return user;
   }
 
   @Get('all')
   async searchUsers() {
     const users = await this.user.searchUsers();
-
     return users;
   }
 
