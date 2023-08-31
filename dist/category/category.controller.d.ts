@@ -10,12 +10,16 @@ export declare class CategoryController {
         categoria: {
             id: string;
             name: string;
+            createdAt: Date;
+            updatedAt: Date;
         };
         messagem: string;
     }>;
     searchCategories(categoryName: string): Promise<{
         id: string;
         name: string;
+        createdAt: Date;
+        updatedAt: Date;
     }[]>;
     deleteCategory(id: string): Promise<{
         message: string;

@@ -14,6 +14,8 @@ export declare class ProductController {
         description: string;
         categoryId: string;
         menuId: string;
+        createdAt: Date;
+        updatedAt: Date;
     }>;
     updateProducts(id: string, updatedData: Partial<IProductDTO>): Promise<{
         produto: {
@@ -24,6 +26,8 @@ export declare class ProductController {
             description: string;
             categoryId: string;
             menuId: string;
+            createdAt: Date;
+            updatedAt: Date;
         };
         messagem: string;
     }>;
@@ -35,6 +39,8 @@ export declare class ProductController {
         description: string;
         categoryId: string;
         menuId: string;
+        createdAt: Date;
+        updatedAt: Date;
     }[]>;
     deleteProduct(id: string): Promise<{
         message: string;
